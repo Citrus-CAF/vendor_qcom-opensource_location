@@ -1,3 +1,4 @@
+ifneq ($(USE_LOCAL_GNSSPPS),true)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -30,3 +31,4 @@ LOCAL_C_INCLUDES := \
     $(TARGET_OUT_HEADERS)/libloc_pla
 
 include $(BUILD_SHARED_LIBRARY)
+endif
